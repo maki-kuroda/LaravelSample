@@ -7,7 +7,7 @@ use App\Livewire\MemoEdit;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcomea');
 });
 
 Route::get('/memos', MemoList::class)->name('memos.index');
