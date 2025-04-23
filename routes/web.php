@@ -2,17 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FirstController;
-use App\Livewire\MemoList;
-use App\Livewire\MemoEdit;
+// use App\Http\Livewire\MemoList;
+// use App\Http\Livewire\MemoEdit;
+
 
 
 Route::get('/', function () {
-    return view('welcomea');
+    return view('welcome');
 });
 
-Route::get('/memos', MemoList::class)->name('memos.index');
-Route::get('/memos/create', MemoEdit::class)->name('memos.create');
-Route::get('/memos/{memo}/edit', MemoEdit::class)->name('memos.edit');
+// Route::get('/memos', MemoList::class)->name('memos.index');
+// Route::get('/memos/create', MemoEdit::class)->name('memos.create');
+// Route::get('/memos/{memo}/edit', MemoEdit::class)->name('memos.edit');
 
 // ルートディレクトリにアクセスされたら、viewディレクトリのwelcomeファイルを開く
 

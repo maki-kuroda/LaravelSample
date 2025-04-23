@@ -10,6 +10,12 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <x-welcome />
             </div>
+
+            @livewire('memo-form')
+            @livewire('memo-list')
+            <!-- <livewire:memo-form />
+            <livewire:memo-list /> -->
+
         </div>
     </div>
 </x-app-layout>
