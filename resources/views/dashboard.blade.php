@@ -13,8 +13,6 @@
 
             @livewire('memo-form')
             @livewire('memo-list')
-            <!-- <livewire:memo-form />
-            <livewire:memo-list /> -->
 
         </div>
     </div>

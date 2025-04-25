@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -8,7 +8,7 @@
     {{-- コンテンツ --}}
     @livewireScripts
 </body>
-    <!-- <head>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -51,4 +51,31 @@
         @livewireScripts
     </body> -->
 
+<!-- </html> -->
+
+
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルメモアプリ</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        {{-- ヘッダー --}}
+        <header class="bg-white shadow p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">メモアプリ</h1>
+            <div>ユーザー名 or ログイン</div>
+        </header>
+
+        {{-- メイン --}}
+        <main class="flex-1 flex overflow-hidden">
+        @yield('content')
+        </main>
+    </div>
+    @livewireScripts
+</body>
 </html>

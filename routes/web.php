@@ -42,3 +42,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/memos', function () {
+    return view('memos.index');
+});
